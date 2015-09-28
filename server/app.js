@@ -16,7 +16,7 @@ app.get('/carousel' , function(req, res){
     res.send(students);
 });
 
-var server = app.listen(process.env.PORT, function(){
+var server = app.listen(process.env.PORT || 3000, function(){
     var port = server.address().port;
     console.log("Listening on port: ", port);
 });
